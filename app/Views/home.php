@@ -49,13 +49,20 @@ $this->partial('header');
     <div id="fourth" class="vh">
     </div>
     <!-- #fourth -->
-    <div id="fifth" class="partner v-separate">
+    <div id="fifth">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="map" class="map-preload"></div>
+        </div>
+      </div>
+    </div>
+    <div id="six" class="partner v-separate">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3 text-center">
             <h3>Our Partner</h3>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
             <ul class="logo-grid text-center">
               <li>
                 <a href="#">
@@ -77,7 +84,7 @@ $this->partial('header');
         </div>
       </div>
     </div>
-    <div id="six" class="vh">
+    <div id="seventh" class="vh">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -101,14 +108,6 @@ $this->partial('header');
                       Fusce efficitur tortor eu mi consectetur, nec sodales mauris commodo.
                       Cras et lacus vulputate, rutrum turpis non, sodales quam.
                       Aliquam lorem risus, viverra at enim vel, tristique venenatis lectus.
-                      Nunc et risus ut nibh interdum mattis vitae ut lorem.
-                      Praesent vitae porta eros, eget tempus augue.
-                      Suspendisse ultricies quam a tincidunt convallis.
-                      In mollis dictum ex quis vestibulum.
-                      Duis dapibus tempus mauris eu pulvinar.
-                      Ut rutrum ante odio, id fermentum ex blandit sed.
-                      Suspendisse rhoncus felis eget urna pretium, tristique scelerisque orci vehicula.
-                      Maecenas ac tempor justo, at mattis magna. Etiam in tincidunt leo, at efficitur lectus. Quisque eget nisl dui.
               </p>
             </div>
             <p>&nbsp;</p>
