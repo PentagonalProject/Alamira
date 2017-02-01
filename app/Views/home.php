@@ -52,7 +52,10 @@ $this->partial('header');
     <div id="fifth" class="partner v-separate">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-4">
+            <h3>Our Partner</h3>
+          </div>
+          <div class="col-md-8">
             <ul class="logo-grid text-center">
               <li>
                 <a href="#">
