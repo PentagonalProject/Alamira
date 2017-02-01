@@ -14,5 +14,9 @@ $this->partial(
         'title' => '404 Page Not Found'
     ]
 );
+?>
+    <div id="first" class="vh">
 
+    </div>
+<?php
 $this->partial('footer');

@@ -1,0 +1,255 @@
+/*!
+ * Layout
+ */
+.preload {
+    position: fixed;
+    top: -200%;
+    transition: all linear 1s;
+    opacity: 0;
+}
+.wait-load .preload {
+    display: block;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    text-align: center;
+    opacity: 1;
+}
+
+.wait-load .inner-loader {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width:150px;
+    height: 150px;
+    left:50%;
+    margin-left:-75px;
+    top:50%;
+    margin-top: -120px;
+    position:absolute;
+    transition: all linear 1s;
+}
+.wait-load .loader-item {
+    display: block;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-radius:0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    transform-style: preserve-3d;
+    transition: all ease 1s;
+    animation: grayscale linear 1s infinite;
+}
+.wait-load .loader-item:nth-child(1) {
+    border: 75px solid rgba(0,0,0,0);
+    border-bottom: 55px solid #376976;
+}
+
+.wait-load .loader-item:nth-child(2) {
+    top: 52px;
+    border: 75px solid rgba(0,0,0,0);
+    border-left: 55px solid #3b727f;
+    transform: rotate(-17.5deg);
+    margin-left: 95px;
+    animation-delay: .3s;
+}
+
+.wait-load .loader-item:nth-child(3) {
+    top: 152px;
+    border: 75px solid rgba(0,0,0,0);
+    border-left: 55px solid #458890;
+    transform: rotate(54.5deg);
+    margin-left: 62px;
+    animation-delay: .6s;
+}
+
+.wait-load .loader-item:nth-child(4) {
+    top: 152px;
+    border: 75px solid rgba(0,0,0,0);
+    border-right: 55px solid #4c939c;
+    transform: rotate(-54deg);
+    margin-left: -42px;
+    animation-delay: .9s;
+}
+.loaded .loader-item:nth-child(1) {
+
+}
+.loaded .loader-item:nth-child(2) {
+    transform: rotate(90deg);
+    top: 65px;
+    margin-left: 84px;
+}
+.loaded .loader-item:nth-child(3) {
+    top: -10px;
+    transform: rotate(-90deg);
+    margin-left: 158px;
+}
+.loaded .loader-item:nth-child(4) {
+    top: 65px;
+    transform: rotate(-90deg);
+    margin-left: -64px;
+}
+@keyframes grayscale {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loaded .preload {
+    top: -200%;
+    opacity: 0;
+}
+.loaded .inner-loader {
+    margin-left:-150px;
+}
+body {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", arial, sans-serif;
+}
+/* TEMPLATES
+ ------------------------ */
+.v-separate:before,
+.v-separate:after,
+.vh:before,
+.vh:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.vh {
+    min-height: 100vh;
+    height: auto;
+}
+.v-separate {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-height: 30px;
+    display: block;
+}
+.overlay-bg {
+    top:0;
+    left:0;
+    background-color: #000;
+    opacity: .2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.overlay-bg.overlay-bg-darken {
+    opacity: .5;
+}
+/* Customized
+ ------------------------ */
+.btn.btn-bordered {
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: inherit;
+}
+
+.btn.btn-white {
+    color: #eee;
+    border-color: #eee;
+}
+.btn.btn-white:hover {
+    border-color: #fff;
+    color: #fff;
+}
+#first {
+    color: #fff;
+    background-color: #255E79;
+    background-image: url("../images/hero-01.jpg");
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    transition: all ease 300ms;
+    position: relative;
+}
+#second {
+    color: #fff;
+    background-color: #151717;
+}
+#third {
+    color: #fff;
+    background-color: #ffa733;
+}
+#fourth {
+    color: #444;
+    background-color: #f1f1f1;
+}
+#fifth {
+    color: #444;
+}
+ul.logo-grid {
+    list-style: none;
+    padding: 0;
+    margin: .7em 0;
+}
+ul.logo-grid li {
+    display: inline-block;
+    margin: 0 1em;
+}
+ul.logo-grid li a {
+    filter:grayscale(100%);
+    transition: all linear .3s;
+}
+ul.logo-grid li a:hover {
+    filter:grayscale(0%);
+}
+/* SIX
+ --------------------  */
+#six {
+    color: #fff;
+    background-color: #151717;
+}
+#six .col-md-5 > h1 {
+    margin-top: 10vh;
+}
+#six .paragraph-area {
+    margin-bottom: 10vh;
+}
+.scrolling-image {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.scrolling-image img {
+    position: absolute;
+    max-width: 100%;
+    top:0;
+    left:0;
+    transition: top linear 2s;
+}
+.scrolling-image:hover img {
+    top: -100%;
+}
+/* FOOTER
+ -------------------- */
+#footer {
+    border-top: 3px solid #ffa733;;
+    color: #fff;
+    background-color: #255E79;
+    background-image: url("../images/hero-01.jpg");
+    background-attachment: fixed;
+    background-position:center bottom;
+    background-size: cover;
+    transition: all ease 300ms;
+    position: relative;
+}

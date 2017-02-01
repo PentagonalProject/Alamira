@@ -13,6 +13,10 @@ if (!isset($this) || ! $this instanceof Template) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= $this['title'];?></title>
+  <link href="<?= $this['base:url'];?>/google-fonts/Lato:300,400,700.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/layout.css">
+  <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/animate.css">
   <script type="text/javascript">
     var jsBody = <?=
         // asset dom javascript
@@ -26,6 +30,23 @@ if (!isset($this) || ! $this instanceof Template) {
         );
     ?>,
         BaseUrl = <?= json_encode($this['base:url']);?>;
+        var preloadInterval = setInterval(function () {
+          var body = document.getElementsByTagName('body');
+          if (body.length) {
+              document.documentElement.className += 'wait-load';
+              body = body[0];
+              var preload = document.createElement('div');
+                preload.className = 'preload';
+                preload.innerHTML = '<div class="inner-loader">'
+                        + '<div class="loader-item"></div>'
+                        + '<div class="loader-item"></div>'
+                        + '<div class="loader-item"></div>'
+                        + '<div class="loader-item"></div>'
+                    +'</div>';
+                body.prepend(preload);
+              clearInterval(preloadInterval);
+          }
+        });
   </script>
 </head>
 <body>
