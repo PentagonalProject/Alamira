@@ -16,6 +16,8 @@ if (!isset($this) || ! $this instanceof Template) {
   <link href="<?= $this['base:url'];?>/google-fonts/Lato:300,400,700.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/bootstrap.css">
   <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/layout.css">
+  <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/slick/slick.css">
+  <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/slick/slick-theme.css">
   <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/animate.css">
   <script type="text/javascript">
     var jsBody = <?=
@@ -24,6 +26,7 @@ if (!isset($this) || ! $this instanceof Template) {
             [
                 "jquery"    => $this['base:url'] . '/assets/js/jquery.js',
                 "bootstrap" => $this['base:url'] . '/assets/js/bootstrap.js',
+                "slick"     => $this['base:url'] . '/assets/slick/slick.js',
                 "layout"    => $this['base:url'] . '/assets/js/layout.js',
                 "map"       => $this['base:url'] . '/assets/js/map.js',
             ]

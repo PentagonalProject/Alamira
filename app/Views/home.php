@@ -50,11 +50,8 @@ $this->partial('header');
     </div>
     <!-- #fourth -->
     <div id="fifth">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="map" class="map-preload"></div>
-        </div>
-      </div>
+      <div id="map" class="map-preload"></div>
+      <div class="clearfix"></div>
     </div>
     <div id="six" class="partner v-separate">
       <div class="container">
@@ -63,10 +60,40 @@ $this->partial('header');
             <h3>Our Partner</h3>
           </div>
           <div class="col-md-9">
-            <ul class="logo-grid text-center">
+            <ul class="logo-grid text-center slick" data-config="auto">
               <li>
                 <a href="#">
                   <img src="<?= $this['base:url'];?>/assets/images/logo-motorola.png" alt="motorola"  data-toggle="tooltip" data-placemet="bottom" title="motorola">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="<?= $this['base:url'];?>/assets/images/logo-starbuck.png" alt="starbuck"  data-toggle="tooltip" data-placemet="bottom" title="Starbuck">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="<?= $this['base:url'];?>/assets/images/logo-motorola.png" alt="motorola" data-toggle="tooltip" data-placemet="bottom" title="motorola">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="<?= $this['base:url'];?>/assets/images/logo-starbuck.png" alt="starbuck"  data-toggle="tooltip" data-placemet="bottom" title="Starbuck">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="<?= $this['base:url'];?>/assets/images/logo-motorola.png" alt="motorola" data-toggle="tooltip" data-placemet="bottom" title="motorola">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="<?= $this['base:url'];?>/assets/images/logo-starbuck.png" alt="starbuck"  data-toggle="tooltip" data-placemet="bottom" title="Starbuck">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="<?= $this['base:url'];?>/assets/images/logo-motorola.png" alt="motorola" data-toggle="tooltip" data-placemet="bottom" title="motorola">
                 </a>
               </li>
               <li>
