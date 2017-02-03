@@ -5,7 +5,7 @@
     position: fixed;
     opacity: 0;
     transition: all linear 1s;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.88);
     display: block;
     top: 0;
     right: 0;
@@ -15,6 +15,9 @@
     z-index: 9999;
     text-align: center;
     visibility: visible;
+}
+.wait-load body {
+    overflow: hidden;
 }
 .loader-item {
     display: block;
@@ -172,6 +175,16 @@ body {
 .margin-left-0 {
     margin-left: 0;
 }
+.line-height-1-5 {
+    line-height: 1.5;
+}
+.line-height-2 {
+    line-height: 2;
+}
+.spacing-1 {
+    letter-spacing: 1px;
+}
+
 /* Customized
  ------------------------ */
 .btn.btn-bordered {
@@ -196,6 +209,12 @@ body {
     color: #204d74;
 }
 
+.text-white {
+    color: #fff;
+}
+.bg-white {
+    background-color: #fff;
+}
 .btn.btn-bordered.btn.btn-white {
     color: #f1f1f1;
     border-color: #f1f1f1;
@@ -207,10 +226,17 @@ body {
     color: #fff;
 }
 
+.text-orange {
+    color: #ff981a;
+}
+.bg-orange {
+    background-color: #ff981a;
+}
 .btn.btn-bordered.btn.btn-orange {
     color: #ff981a;
     border-color: #ff981a;
 }
+
 .btn.btn-bordered.btn.btn-orange.focus,
 .btn.btn-bordered.btn.btn-orange:hover,
 .btn.btn-bordered.btn.btn-orange:focus {
@@ -372,7 +398,17 @@ ul.logo-grid li a img {
     background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,.3), rgba(0,0,0,0));
     background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,.3), rgba(0,0,0,0));
 }
-
+hr.soften {
+    content: '';
+    height: 1px;
+    display:block;
+    border: 0;
+    margin: 40px 0;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+}
 .logo-bottom-img {
     height:100px;
     max-height: 100px;
@@ -414,4 +450,63 @@ body.scrolled #seventh {
 }
 .slick .slick-list .slick-next-contain {
     display: block;
+}
+
+.slick-arrow-custom {
+    position: absolute;
+    top:50%;
+    font-size: 50px;
+    margin-top: -30px;
+    height:640px;
+    width: 60px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease .5s;
+    z-index: 99;
+}
+.slick-portfolio .slick-arrow-custom {
+    color: #f1f1f1;
+    box-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+.slick:hover .slick-arrow-custom {
+    opacity: .2;
+}
+
+.slick-portfolio:hover .slick-arrow-custom {
+    opacity: .4;
+}
+.slick-portfolio .slick-arrow-custom:hover,
+.slick .slick-arrow-custom:hover {
+    opacity: 1;
+}
+
+.slick-arrow-custom.next-arrow {
+    right: -50px;
+}
+.slick-portfolio .slick-arrow-custom.next-arrow {
+    right: 10px;
+}
+
+.slick-arrow-custom.prev-arrow {
+    left:  -50px;
+}
+
+.slick-portfolio .slick-arrow-custom.prev-arrow {
+    left: 10px;
+}
+
+.testimonial {
+    margin-bottom: 3.5em;
+}
+.testimonial-author {
+    font-style: italic;
+    font-size:90%;
+}
+.testimonial-author .author-name {
+    font-weight: bold;
+    padding: 3px 5px;
+    border-bottom: 2px solid #ddd;
+}
+.portfolio-section {
+    padding: 10px 30px;
 }

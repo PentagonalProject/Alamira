@@ -15,7 +15,7 @@ if (!isset($this) || ! $this instanceof Template) {
         <div class="col-md-12">
           <div class="footer-copy">
             <div class="logo-bottom">
-              <img src="<?= $this['base:url'];?>/assets/images/logo.png" class="logo-bottom-img">
+              <img src="<?= $this['base:url'];?>/assets/images/logo.png" alt="logo footer" class="logo-bottom-img">
             </div>
             <p>&copy; <?= date('Y');?> My Company. All Rights Reserved</p>
           </div>

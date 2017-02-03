@@ -76,7 +76,35 @@
                     ];
                 }
                 $(this).slick(config);
-            })
+            });
+            $('.slick-portfolio').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                arrows:true,
+                nextArrow: "<div class=\"slick-arrow-custom next-arrow\"><i class=\"glyphicon glyphicon-chevron-right\"><\/i><\/div>",
+                prevArrow: "<div class=\"slick-arrow-custom prev-arrow\"><i class=\"glyphicon glyphicon-chevron-left\"><\/i><\/div>",
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
         }
         /**
          * Handle Image Resize
