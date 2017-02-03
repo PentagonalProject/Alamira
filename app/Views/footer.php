@@ -13,7 +13,12 @@ if (!isset($this) || ! $this instanceof Template) {
     <div class="container text-center">
       <div class="row">
         <div class="col-md-12">
-          <div>&copy; <?= date('Y');?></div>
+          <div class="footer-copy">
+            <div class="logo-bottom">
+              <img src="<?= $this['base:url'];?>/assets/images/logo.png" class="logo-bottom-img">
+            </div>
+            <p>&copy; <?= date('Y');?> My Company. All Rights Reserved</p>
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +28,7 @@ if (!isset($this) || ! $this instanceof Template) {
   <script type="text/javascript">
       var idMap = document.getElementById('map');
       if (idMap) {
-          console.log(idMap);
+//          console.log(idMap);
           var map;
           var mapCallback = function () {
               try {
@@ -75,11 +80,11 @@ if (!isset($this) || ! $this instanceof Template) {
                           }
                           infowindow.open(map, marker);
                       } catch (err) {
-                          console.log(err);
+//                          console.log(err);
                       }
                   });
               } catch (err) {
-                  console.log(err);
+//                  console.log(err);
               }
           }
       }

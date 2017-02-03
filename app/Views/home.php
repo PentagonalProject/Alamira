@@ -13,34 +13,56 @@ $this->partial('header');
     <div id="first" class="vh">
         <div class="overlay-bg"></div>
         <header id="header" class="header-menu">
+          <div class="nav">
             <div class="container">
+              <ul>
+                <li><a href="#first">Home</a></li>
+                <li><a href="#second">Second</a></li>
+                <li><a href="#third">Third</a></li>
+                <li><a href="#fourth">Fourth</a></li>
+                <li><a href="#fourth">Fifth</a></li>
+              </ul>
             </div>
+          </div>
         </header>
         <div id="top-content">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h2 class="text-center bigger">Develop your new service to improve your presence on the internet.</h2>
+                <div class="top-contain">
+                  <div id="top-logo-section" class="text-center">
+                    <img id="top-logo-image" class="top-logo-image animated fadeInDown" src="<?= $this['base:url'];?>/assets/images/logo.png"/>
+                  </div>
+                  <div class="slick" data-slick='{"dots": false, "infinite": true,"autoplay": true,"speed": 300, "slidesToShow": 1, "arrows":false}'>
+                    <div>
+                      <h2 class="text-center text-light">Develop your new service to improve your presence on the internet.</h2>
+                    </div>
+                    <div class="slick-next-contain">
+                      <h2 class="text-center text-light">Lorem Ipsum Dolor Sit amet.</h2>
+                    </div>
+                    <div class="slick-next-contain">
+                      <h2 class="text-center text-light">Curabitur lacinia arcu ut purus dignissim.</h2>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
     </div>
     <!-- #first -->
-    <div id="second" class="vh">
+    <div id="second" class="v-separate text-light">
       <div class="container">
-        <h2 class="text-center">Break Up Your Mind</h2>
+        <h1 class="text-center text-light">Break Up Your Mind</h1>
       </div>
     </div>
     <!-- #second -->
     <div id="third" class="v-separate">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h3 class="lead text-right">Give Us The Opportunity</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-left lead"><a href="#" class="btn btn-white btn-block btn-bordered">Hire US</a></h3>
+                <div class="col-md-12">
+                    <h1 class="text-center text-light">Give Us The Opportunity</h1>
+                    <h3 class="text-center"><a href="#" class="btn btn-white btn-lg btn-bordered">REQUEST QUOTE</a></h3>
                 </div>
             </div>
         </div>
@@ -136,6 +158,14 @@ $this->partial('header');
                       Cras et lacus vulputate, rutrum turpis non, sodales quam.
                       Aliquam lorem risus, viverra at enim vel, tristique venenatis lectus.
               </p>
+              <p>&nbsp;</p>
+              <div class="row">
+                <div class="col-md-10 text-center">
+                  <a href="#" class="btn btn-white btn-bordered margin-10 margin-left-0">REQUEST QUOTE</a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="#" class="btn btn-orange  btn-bordered margin-10 margin-left-0">REQUEST QUOTE</a>
+                </div>
+              </div>
             </div>
             <p>&nbsp;</p>
           </div>

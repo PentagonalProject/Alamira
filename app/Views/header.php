@@ -20,6 +20,7 @@ if (!isset($this) || ! $this instanceof Template) {
   <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/slick/slick-theme.css">
   <link rel="stylesheet" href="<?= $this['base:url'];?>/assets/css/animate.css">
   <script type="text/javascript">
+    document.documentElement.className += ' wait-load';
     var jsBody = <?=
         // asset dom javascript
         json_encode(
@@ -36,7 +37,6 @@ if (!isset($this) || ! $this instanceof Template) {
         var preloadInterval = setInterval(function () {
           var body = document.getElementsByTagName('body');
           if (body.length) {
-              document.documentElement.className += 'wait-load';
               body = body[0];
               var preload = document.createElement('div');
                 preload.className = 'preload';
