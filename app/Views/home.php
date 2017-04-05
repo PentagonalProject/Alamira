@@ -11,20 +11,21 @@ if (!isset($this) || ! $this instanceof Template) {
 $this->partial('header');
 ?>
     <div id="first" class="vh">
-        <div class="overlay-bg"></div>
-        <header id="header" class="header-menu">
-          <div class="nav">
-            <div class="container">
-              <ul>
-                <li><a href="#first">Home</a></li>
-                <li><a href="#second">Second</a></li>
-                <li><a href="#third">Third</a></li>
-                <li><a href="#fourth">Fourth</a></li>
-                <li><a href="#fifth">Fifth</a></li>
-              </ul>
-            </div>
+      <div class="overlay-bg"></div>
+      <header id="header" class="header-menu">
+        <div class="nav">
+          <div class="container">
+            <ul>
+              <li><a href="#first">Home</a></li>
+              <li><a href="#second">Second</a></li>
+              <li><a href="#third">Third</a></li>
+              <li><a href="#fourth">Fourth</a></li>
+              <li><a href="#fifth">Fifth</a></li>
+            </ul>
           </div>
-        </header>
+        </div>
+      </header>
+      <!-- #header -->
         <div id="top-content">
           <div class="container">
             <div class="row">
